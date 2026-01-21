@@ -20,8 +20,8 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
-        {/* Logo Section */}
-        <div className="flex justify-center py-4 border-b border-border/50">
+        <div className="flex items-center justify-between py-4">
+          {/* Logo Section - Left */}
           <Link to="/">
             <img 
               src={logo} 
@@ -29,30 +29,28 @@ const Navigation = () => {
               className="h-24 md:h-32 w-auto"
             />
           </Link>
-        </div>
 
-        {/* Desktop Navigation - Centered below logo */}
-        <div className="hidden md:flex items-center justify-center h-12 space-x-8">
-          {navItems.map((item) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                isActive(item.path)
-                  ? "text-primary border-b-2 border-primary pb-1"
-                  : "text-foreground"
-              }`}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
+          {/* Desktop Navigation - Right */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  isActive(item.path)
+                    ? "text-primary border-b-2 border-primary pb-1"
+                    : "text-foreground"
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden flex justify-center py-2">
+          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 rounded-lg hover:bg-muted transition-colors"
+            className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
