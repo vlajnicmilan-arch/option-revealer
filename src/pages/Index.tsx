@@ -89,7 +89,7 @@ const Index = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Iskustvo bez kompromisa</h3>
               <p className="text-[16px] font-light text-[#5c5c5c] leading-relaxed">
-                Tim stručnjaka s godinama iskustva u dekorativnim tehnikama i mikrocementu.
+                Godine stručnog rada u dekorativnim tehnikama i mikrocementu.
               </p>
             </div>
           </div>
