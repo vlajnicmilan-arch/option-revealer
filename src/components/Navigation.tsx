@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/tactura-logo-new.jpg";
+import logo from "@/assets/tactura-logo-new.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
