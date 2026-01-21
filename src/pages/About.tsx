@@ -8,46 +8,50 @@ const About = () => {
     <div className="min-h-screen">
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="relative flex items-center justify-center overflow-hidden mt-20 pt-[180px] pb-[140px]">
+      {/* Hero + Story Section with shared background */}
+      <section className="relative overflow-hidden mt-20">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroAbout})` }}
         >
           <div className="absolute inset-0 bg-primary/70" />
         </div>
-        <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">O nama</h1>
-          <p className="text-xl md:text-2xl max-w-2xl mx-auto opacity-95">
-            Posvećenost detaljima, estetici i dugotrajnoj kvaliteti.
-          </p>
+        
+        {/* Hero Content */}
+        <div className="relative z-10 pt-[180px] pb-[140px]">
+          <div className="container mx-auto px-4 text-center text-primary-foreground">
+            <h1 className="text-5xl md:text-6xl font-bold mb-4">O nama</h1>
+            <p className="text-xl md:text-2xl max-w-2xl mx-auto opacity-95">
+              Posvećenost detaljima, estetici i dugotrajnoj kvaliteti.
+            </p>
+          </div>
         </div>
-      </section>
 
-      {/* Story Section */}
-      <section className="pt-[100px] pb-[100px]">
-        <div className="container mx-auto px-4">
-          <div className="max-w-[760px] mx-auto">
-            <h2 className="text-[38px] font-semibold text-[#2b2b2b] mb-8 text-center">Naša priča</h2>
-            <div className="space-y-6 text-[18px] font-light leading-[1.55] text-[#595959]">
-              <p>
-                <strong className="text-foreground">Tactura</strong> je nastala iz istinske ljubavi prema dekorativnim tehnikama 
-                i želje da prostoru damo karakter, toplinu i trajnu ljepotu.
-                Vodimo se jednostavnom filozofijom: <em className="text-primary">"Ljepota je različita od doba do doba."</em>
-                Zato svaki projekt promatramo kao priliku da stvorimo nešto autentično i vizualno upečatljivo.
-              </p>
-              <p>
-                Specijalizirani smo za mikrocement i suvremene dekorativne tehnike 
-                koje spajaju tradiciju, estetiku i vrhunsku izradu.
-                Naš pristup temelji se na preciznosti, kvalitetnim materijalima i dubokom poštovanju prostora u kojem radimo.
-              </p>
-              <p>
-                Vjerujemo da prostor nije samo mjesto — on je odraz osobnosti, stila i načina života.
-                Zato svaki detalj radimo s pažnjom i predanošću.
-              </p>
-              <p>
-                Tactura tim čine majstori s dugogodišnjim iskustvom i zajedničkom strašću prema kvaliteti koja traje.
-              </p>
+        {/* Story Content */}
+        <div className="relative z-10 pt-[100px] pb-[110px]">
+          <div className="container mx-auto px-4">
+            <div className="max-w-[760px] mx-auto">
+              <h2 className="text-[38px] font-semibold text-primary-foreground mb-8 text-center">Naša priča</h2>
+              <div className="space-y-6 text-[18px] font-light leading-[1.55] text-primary-foreground/90">
+                <p>
+                  <strong className="text-primary-foreground">Tactura</strong> je nastala iz istinske ljubavi prema dekorativnim tehnikama 
+                  i želje da prostoru damo karakter, toplinu i trajnu ljepotu.
+                  Vodimo se jednostavnom filozofijom: <em className="text-primary-foreground">"Ljepota je različita od doba do doba."</em>
+                  Zato svaki projekt promatramo kao priliku da stvorimo nešto autentično i vizualno upečatljivo.
+                </p>
+                <p>
+                  Specijalizirani smo za mikrocement i suvremene dekorativne tehnike 
+                  koje spajaju tradiciju, estetiku i vrhunsku izradu.
+                  Naš pristup temelji se na preciznosti, kvalitetnim materijalima i dubokom poštovanju prostora u kojem radimo.
+                </p>
+                <p>
+                  Vjerujemo da prostor nije samo mjesto — on je odraz osobnosti, stila i načina života.
+                  Zato svaki detalj radimo s pažnjom i predanošću.
+                </p>
+                <p>
+                  Tactura tim čine majstori s dugogodišnjim iskustvom i zajedničkom strašću prema kvaliteti koja traje.
+                </p>
+              </div>
             </div>
           </div>
         </div>
