@@ -7,18 +7,15 @@ import heroHome from "@/assets/hero-home.jpg";
 import serviceDecorative from "@/assets/service-decorative.jpg";
 import serviceMicrocement from "@/assets/service-microcement.jpg";
 import serviceConsultation from "@/assets/service-consultation.jpg";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden pt-32 mb-24">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroHome})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${heroHome})`
+      }}>
           <div className="absolute inset-0 bg-gradient-to-r from-primary/70 to-primary/50" />
           {/* Bottom fade gradient */}
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-card to-transparent" />
@@ -29,12 +26,28 @@ const Index = () => {
             Dekorativne tehnike i mikrocement vrhunske kvalitete.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-            <Button asChild size="lg" className="text-lg border-2 bg-transparent text-white hover:text-white transition-all duration-300" style={{ borderColor: '#a78c69', borderRadius: '8px', fontWeight: 500 }} onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#a78c69'; }} onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; }}>
+            <Button asChild size="lg" className="text-lg border-2 bg-transparent text-white hover:text-white transition-all duration-300" style={{
+            borderColor: '#a78c69',
+            borderRadius: '8px',
+            fontWeight: 500
+          }} onMouseEnter={e => {
+            e.currentTarget.style.backgroundColor = '#a78c69';
+          }} onMouseLeave={e => {
+            e.currentTarget.style.backgroundColor = 'transparent';
+          }}>
               <Link to="/usluge">
                 Naše usluge <ArrowRight className="ml-2" size={20} />
               </Link>
             </Button>
-            <Button asChild size="lg" className="text-lg border-2 bg-transparent text-white hover:text-white transition-all duration-300" style={{ borderColor: '#a78c69', borderRadius: '8px', fontWeight: 500 }} onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#a78c69'; }} onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; }}>
+            <Button asChild size="lg" className="text-lg border-2 bg-transparent text-white hover:text-white transition-all duration-300" style={{
+            borderColor: '#a78c69',
+            borderRadius: '8px',
+            fontWeight: 500
+          }} onMouseEnter={e => {
+            e.currentTarget.style.backgroundColor = '#a78c69';
+          }} onMouseLeave={e => {
+            e.currentTarget.style.backgroundColor = 'transparent';
+          }}>
               <Link to="/kontakt">Kontaktirajte nas</Link>
             </Button>
           </div>
@@ -46,9 +59,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Zašto Tactura?</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Spoj tradicije, inovacije i vrhunskog majstorstva
-            </p>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Spoj tradicije, izamijeni tekst sa sljedećim: novacije i vrhunskog majstorstva</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -98,11 +109,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all">
               <div className="relative h-64 overflow-hidden">
-                <img
-                  src={serviceDecorative}
-                  alt="Dekorativne tehnike"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+                <img src={serviceDecorative} alt="Dekorativne tehnike" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent" />
                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-primary-foreground">
                   Dekorativne tehnike
@@ -120,11 +127,7 @@ const Index = () => {
 
             <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all">
               <div className="relative h-64 overflow-hidden">
-                <img
-                  src={serviceMicrocement}
-                  alt="Mikrocement"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+                <img src={serviceMicrocement} alt="Mikrocement" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent" />
                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-primary-foreground">
                   Mikrocement
@@ -142,11 +145,7 @@ const Index = () => {
 
             <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all">
               <div className="relative h-64 overflow-hidden">
-                <img
-                  src={serviceConsultation}
-                  alt="Konsultacije"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+                <img src={serviceConsultation} alt="Konsultacije" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent" />
                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-primary-foreground">
                   Konsultacije
@@ -183,8 +182,6 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
