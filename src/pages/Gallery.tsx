@@ -121,7 +121,9 @@ const Gallery = () => {
               Instagram
             </a>
             <a
-              href="#"
+              href="https://facebook.com/tactura"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
             >
               Facebook

@@ -65,7 +65,7 @@ const Footer = () => {
               </li>
             </ul>
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="opacity-90 hover:opacity-100 transition-opacity">
+              <a href="https://facebook.com/tactura" target="_blank" rel="noopener noreferrer" className="opacity-90 hover:opacity-100 transition-opacity">
                 <Facebook size={20} />
               </a>
               <a href="#" className="opacity-90 hover:opacity-100 transition-opacity">
