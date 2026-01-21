@@ -43,7 +43,7 @@ const Index = () => {
                 Naše usluge <ArrowRight className="ml-2" size={20} />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-lg border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
+            <Button asChild size="lg" className="text-lg bg-white/20 border-2 border-white text-white hover:bg-white/30">
               <Link to="/kontakt">Kontaktirajte nas</Link>
             </Button>
           </div>
