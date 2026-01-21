@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/tactura-logo.jpg";
+import logo from "@/assets/tactura-logo-transparent.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const Navigation = () => {
             <img 
               src={logo} 
               alt="Tactura" 
-              className="h-16 md:h-20 w-auto rounded-lg shadow-md" 
+              className="h-20 md:h-24 w-auto" 
             />
           </Link>
 

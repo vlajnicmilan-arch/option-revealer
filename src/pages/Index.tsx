@@ -7,7 +7,7 @@ import heroHome from "@/assets/hero-home.jpg";
 import serviceDecorative from "@/assets/service-decorative.jpg";
 import serviceMicrocement from "@/assets/service-microcement.jpg";
 import serviceConsultation from "@/assets/service-consultation.jpg";
-import logo from "@/assets/tactura-logo.jpg";
+import logo from "@/assets/tactura-logo-transparent.png";
 
 const Index = () => {
   return (
@@ -28,7 +28,7 @@ const Index = () => {
             <img 
               src={logo} 
               alt="Tactura" 
-              className="h-32 md:h-48 lg:h-56 w-auto mx-auto rounded-2xl shadow-2xl ring-4 ring-white/20"
+              className="h-64 md:h-96 lg:h-[28rem] w-auto mx-auto drop-shadow-2xl"
             />
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
