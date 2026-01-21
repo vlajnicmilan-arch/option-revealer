@@ -7,6 +7,7 @@ import heroHome from "@/assets/hero-home.jpg";
 import serviceDecorative from "@/assets/service-decorative.jpg";
 import serviceMicrocement from "@/assets/service-microcement.jpg";
 import serviceConsultation from "@/assets/service-consultation.jpg";
+import logo from "@/assets/tactura-logo.jpg";
 
 const Index = () => {
   return (
@@ -22,10 +23,18 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+          {/* Prominent Logo */}
+          <div className="mb-8 animate-fade-in">
+            <img 
+              src={logo} 
+              alt="Tactura" 
+              className="h-32 md:h-48 lg:h-56 w-auto mx-auto rounded-2xl shadow-2xl ring-4 ring-white/20"
+            />
+          </div>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
             Ljepota je različita<br />od doba do doba
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto opacity-95">
+          <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto opacity-95">
             Transformišemo prostore dekorativnim tehnikama i mikrocementom vrhunskog kvaliteta
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
