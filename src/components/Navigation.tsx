@@ -26,7 +26,7 @@ const Navigation = () => {
             <img 
               src={logo} 
               alt="Tactura - ljepota je različita od doba do doba" 
-              className="h-[150px] w-auto"
+              className="h-[170px] w-auto"
             />
           </Link>
 
