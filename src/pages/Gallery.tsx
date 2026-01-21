@@ -1,9 +1,14 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { X } from "lucide-react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState<{ image: string; title: string } | null>(null);
+
   const projects = [
     {
       id: 1,
@@ -42,7 +47,8 @@ const Gallery = () => {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all bg-card"
+                className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all bg-card cursor-pointer"
+                onClick={() => setSelectedImage({ image: project.image, title: project.title })}
               >
                 <div className="relative h-80 overflow-hidden">
                   <img
@@ -99,6 +105,25 @@ const Gallery = () => {
           </div>
         </div>
       </section>
+
+      {/* Lightbox Modal */}
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-[90vw] max-h-[90vh] p-0 border-none bg-transparent shadow-none">
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 z-50 p-2 bg-black/50 hover:bg-black/70 rounded-full text-white transition-colors"
+          >
+            <X size={24} />
+          </button>
+          {selectedImage && (
+            <img
+              src={selectedImage.image}
+              alt={selectedImage.title}
+              className="w-full h-full object-contain max-h-[85vh] rounded-lg"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
 
       <Footer />
     </div>
