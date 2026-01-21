@@ -7,7 +7,6 @@ import heroHome from "@/assets/hero-home.jpg";
 import serviceDecorative from "@/assets/service-decorative.jpg";
 import serviceMicrocement from "@/assets/service-microcement.jpg";
 import serviceConsultation from "@/assets/service-consultation.jpg";
-import logo from "@/assets/tactura-logo-new.jpg";
 
 const Index = () => {
   return (
@@ -15,7 +14,7 @@ const Index = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-32">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroHome})` }}
@@ -23,20 +22,10 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
-          {/* Prominent Logo */}
-          <div className="mb-8 animate-fade-in">
-            <div className="inline-block bg-background/95 backdrop-blur-sm rounded-2xl p-6 md:p-8">
-              <img 
-                src={logo} 
-                alt="Tactura - ljepota je različita od doba do doba" 
-                className="h-48 md:h-72 lg:h-80 w-auto mx-auto"
-              />
-            </div>
-          </div>
-          <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto opacity-95">
+          <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto opacity-95 animate-fade-in">
             Transformišemo prostore dekorativnim tehnikama i mikrocementom vrhunskog kvaliteta
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
             <Button asChild size="lg" variant="secondary" className="text-lg">
               <Link to="/usluge">
                 Naše usluge <ArrowRight className="ml-2" size={20} />
