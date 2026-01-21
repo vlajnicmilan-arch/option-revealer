@@ -19,7 +19,7 @@ const Index = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroHome})` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/70 to-primary/50" />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
           <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto opacity-95 animate-fade-in">
