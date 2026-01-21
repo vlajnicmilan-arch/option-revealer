@@ -63,7 +63,7 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-8 rounded-xl bg-[#f4f2ed] border border-[#e2dfda] hover:shadow-xl transition-shadow">
+            <div className="flex flex-col items-center text-center pt-[28px] pb-[28px] pl-[24px] pr-[24px] gap-[14px] rounded-lg bg-[#f7f5f2] border border-[#dfdbd6] shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
                 <Palette color="#a78c69" size={32} />
               </div>
@@ -73,7 +73,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="text-center p-8 rounded-xl bg-[#f4f2ed] border border-[#e2dfda] hover:shadow-xl transition-shadow">
+            <div className="flex flex-col items-center text-center pt-[28px] pb-[28px] pl-[24px] pr-[24px] gap-[14px] rounded-lg bg-[#f7f5f2] border border-[#dfdbd6] shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
                 <Sparkles color="#a78c69" size={32} />
               </div>
@@ -83,7 +83,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="text-center p-8 rounded-xl bg-[#f4f2ed] border border-[#e2dfda] hover:shadow-xl transition-shadow">
+            <div className="flex flex-col items-center text-center pt-[28px] pb-[28px] pl-[24px] pr-[24px] gap-[14px] rounded-lg bg-[#f7f5f2] border border-[#dfdbd6] shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
                 <Users color="#a78c69" size={32} />
               </div>
