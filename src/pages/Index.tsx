@@ -27,12 +27,12 @@ const Index = () => {
             Dekorativne tehnike i mikrocement vrhunske kvalitete.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-            <Button asChild size="lg" variant="secondary" className="text-lg">
+            <Button asChild size="lg" className="text-lg font-medium border-2 rounded-md bg-transparent text-white hover:text-white transition-colors" style={{ borderColor: '#a78c69', borderRadius: '7px' }} onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#a78c69'; }} onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; }}>
               <Link to="/usluge">
                 Naše usluge <ArrowRight className="ml-2" size={20} />
               </Link>
             </Button>
-            <Button asChild size="lg" className="text-lg bg-white/20 border-2 border-white text-white hover:bg-white/30">
+            <Button asChild size="lg" className="text-lg font-medium border-2 rounded-md bg-transparent text-white hover:text-white transition-colors" style={{ borderColor: '#a78c69', borderRadius: '7px' }} onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#a78c69'; }} onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; }}>
               <Link to="/kontakt">Kontaktirajte nas</Link>
             </Button>
           </div>
