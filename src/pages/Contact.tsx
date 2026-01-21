@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,16 +20,29 @@ const Contact = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData,
+      });
+
+      if (error) {
+        console.error("Error sending email:", error);
+        toast.error("Greška pri slanju poruke. Molimo pokušajte ponovno.");
+        return;
+      }
+
       toast.success("Poruka uspješno poslana! Javit ćemo vam se uskoro.");
       setFormData({ firstName: "", lastName: "", email: "", phone: "", subject: "", message: "" });
+    } catch (error) {
+      console.error("Error:", error);
+      toast.error("Greška pri slanju poruke. Molimo pokušajte ponovno.");
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
