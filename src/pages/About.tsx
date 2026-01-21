@@ -107,11 +107,16 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-primary text-primary-foreground rounded-2xl p-12 text-center">
             <h2 className="text-4xl font-bold mb-6">Naša misija</h2>
-            <p className="text-xl leading-relaxed opacity-95">
-              Transformisati prostore u umjetnička djela koja odražavaju individualnost svakog klijenta, 
-              koristeći najkvalitetnije materijale, tradicionalne tehnike i moderan pristup. 
-              Želimo da svaki projekt bude dokaz da ljepota nikad ne izlazi iz mode - samo se transformiše.
-            </p>
+            <div className="text-xl leading-relaxed opacity-95 space-y-4">
+              <p>
+                Naša misija je stvarati prostore koji nadmašuju očekivanja — prostore koji postaju umjetnička djela sama po sebi.
+                Kroz vrhunske materijale, tradicionalne tehnike i moderan pristup dizajnu, gradimo površine koje traju, pričaju priču i odražavaju individualnost svakog klijenta.
+              </p>
+              <p>
+                Vjerujemo da ljepota ne nestaje.
+                Ona se mijenja, razvija i transformira — baš kao i prostor u koji unosimo svoj potpis.
+              </p>
+            </div>
           </div>
         </div>
       </section>
