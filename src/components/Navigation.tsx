@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/tactura-logo-transparent.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,14 +19,10 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <img 
-              src={logo} 
-              alt="Tactura" 
-              className="h-20 md:h-24 w-auto" 
-            />
+        <div className="flex items-center justify-between h-16">
+          {/* Text Logo */}
+          <Link to="/" className="text-2xl font-bold text-primary">
+            Tactura
           </Link>
 
           {/* Desktop Navigation */}
