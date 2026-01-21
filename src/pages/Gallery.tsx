@@ -7,6 +7,7 @@ import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import galleryPod1 from "@/assets/gallery-pod-1.jpg";
 import galleryKupaonica from "@/assets/gallery-kupaonica-dekor.jpg";
+import galleryZidKontrast from "@/assets/gallery-zid-kontrast.png";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<{ image: string; title: string } | null>(null);
@@ -38,6 +39,13 @@ const Gallery = () => {
       title: "Dekorativni zid u kupaonici",
       description: "Unikatna dekorativna tehnika s ornamentalnim uzorcima",
       image: galleryKupaonica,
+      category: "Dekorativne tehnike",
+    },
+    {
+      id: 5,
+      title: "Jedan zid, dva potpuno različita dojma",
+      description: "Kontrast između minimalizma i dekorativne teksture sa zlatnim akcentima",
+      image: galleryZidKontrast,
       category: "Dekorativne tehnike",
     },
   ];
