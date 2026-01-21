@@ -9,7 +9,7 @@ const About = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden mt-20">
+      <section className="relative flex items-center justify-center overflow-hidden mt-20 pt-[180px] pb-[140px]">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroAbout})` }}
