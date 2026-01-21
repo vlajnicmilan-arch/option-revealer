@@ -25,11 +25,13 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
           {/* Prominent Logo */}
           <div className="mb-8 animate-fade-in">
-            <img 
-              src={logo} 
-              alt="Tactura" 
-              className="h-64 md:h-96 lg:h-[28rem] w-auto mx-auto drop-shadow-2xl"
-            />
+            <div className="inline-block bg-card/80 backdrop-blur-sm rounded-2xl p-6 md:p-8">
+              <img 
+                src={logo} 
+                alt="Tactura" 
+                className="h-48 md:h-72 lg:h-80 w-auto mx-auto"
+              />
+            </div>
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
             Ljepota je različita<br />od doba do doba
