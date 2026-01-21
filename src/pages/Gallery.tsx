@@ -6,6 +6,7 @@ import { X } from "lucide-react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import galleryPod1 from "@/assets/gallery-pod-1.jpg";
+import galleryKupaonica from "@/assets/gallery-kupaonica-dekor.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<{ image: string; title: string } | null>(null);
@@ -31,6 +32,13 @@ const Gallery = () => {
       description: "Elegantna besavna podna površina u neutralnim tonovima",
       image: galleryPod1,
       category: "Mikrocement",
+    },
+    {
+      id: 4,
+      title: "Dekorativni zid u kupaonici",
+      description: "Unikatna dekorativna tehnika s ornamentalnim uzorcima",
+      image: galleryKupaonica,
+      category: "Dekorativne tehnike",
     },
   ];
 
