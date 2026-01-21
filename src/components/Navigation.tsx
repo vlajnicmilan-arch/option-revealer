@@ -31,16 +31,29 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation - Right */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-12">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-xs font-light tracking-wide uppercase transition-all duration-300 relative pb-1 ${
                   isActive(item.path)
-                    ? "text-primary border-b-2 border-primary pb-1"
-                    : "text-foreground"
+                    ? "text-foreground"
+                    : "text-foreground/70 hover:text-foreground"
                 }`}
+                style={{
+                  borderBottom: isActive(item.path) ? '1.5px solid #a78c69' : '1.5px solid transparent',
+                }}
+                onMouseEnter={(e) => {
+                  if (!isActive(item.path)) {
+                    e.currentTarget.style.borderBottom = '1.5px solid #a78c69';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (!isActive(item.path)) {
+                    e.currentTarget.style.borderBottom = '1.5px solid transparent';
+                  }
+                }}
               >
                 {item.name}
               </Link>
