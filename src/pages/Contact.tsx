@@ -9,20 +9,29 @@ import { toast } from "sonner";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
     phone: "",
+    subject: "",
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    
     // Simulate form submission
-    toast.success("Poruka uspješno poslana! Javit ćemo vam se uskoro.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setTimeout(() => {
+      toast.success("Poruka uspješno poslana! Javit ćemo vam se uskoro.");
+      setFormData({ firstName: "", lastName: "", email: "", phone: "", subject: "", message: "" });
+      setIsSubmitting(false);
+    }, 1000);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -51,51 +60,92 @@ const Contact = () => {
             <div className="bg-card p-8 rounded-2xl shadow-lg">
               <h2 className="text-3xl font-bold mb-6">Pošaljite nam poruku</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Ime i prezime *
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Vaše ime"
-                    className="w-full"
-                  />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="firstName" className="block text-sm font-medium mb-2">
+                      Ime *
+                    </label>
+                    <Input
+                      id="firstName"
+                      name="firstName"
+                      type="text"
+                      required
+                      value={formData.firstName}
+                      onChange={handleChange}
+                      placeholder="Vaše ime"
+                      className="w-full"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="lastName" className="block text-sm font-medium mb-2">
+                      Prezime *
+                    </label>
+                    <Input
+                      id="lastName"
+                      name="lastName"
+                      type="text"
+                      required
+                      value={formData.lastName}
+                      onChange={handleChange}
+                      placeholder="Vaše prezime"
+                      className="w-full"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium mb-2">
+                      Email *
+                    </label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="vas@email.com"
+                      className="w-full"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium mb-2">
+                      Telefon
+                    </label>
+                    <Input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="+385 XX XXX XXXX"
+                      className="w-full"
+                    />
+                  </div>
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email *
+                  <label htmlFor="subject" className="block text-sm font-medium mb-2">
+                    Tema upita *
                   </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
+                  <select
+                    id="subject"
+                    name="subject"
                     required
-                    value={formData.email}
+                    value={formData.subject}
                     onChange={handleChange}
-                    placeholder="vas@email.com"
-                    className="w-full"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                    Telefon
-                  </label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="+385 XX XXX XXXX"
-                    className="w-full"
-                  />
+                    className="w-full h-10 px-3 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+                  >
+                    <option value="">Odaberite temu...</option>
+                    <option value="microcement">Mikrocement</option>
+                    <option value="decorative">Dekorativne tehnike</option>
+                    <option value="consultation">Besplatna konzultacija</option>
+                    <option value="quote">Ponuda za projekt</option>
+                    <option value="other">Ostalo</option>
+                  </select>
                 </div>
 
                 <div>
@@ -113,8 +163,8 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full">
-                  Pošalji poruku
+                <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? "Šaljem..." : "Pošalji poruku"}
                 </Button>
               </form>
             </div>
