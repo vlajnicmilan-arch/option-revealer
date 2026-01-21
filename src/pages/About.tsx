@@ -31,20 +31,22 @@ const About = () => {
             <h2 className="text-4xl font-bold mb-8 text-center">Naša priča</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                <strong className="text-foreground">Tactura</strong> je nastala iz ljubavi prema dekorativnim tehnikama 
-                i želje da svakom prostoru pružimo jedinstvenu ljepotu. Naša filozofija je jednostavna: 
-                <em className="text-primary"> "Ljepota je različita od doba do doba"</em> - svaki projekt 
-                je prilika da stvorimo nešto novo, autentično i vremenski neprolazno.
+                <strong className="text-foreground">Tactura</strong> je nastala iz istinske ljubavi prema dekorativnim tehnikama 
+                i želje da prostoru damo karakter, toplinu i trajnu ljepotu.
+                Vodimo se jednostavnom filozofijom: <em className="text-primary">"Ljepota je različita od doba do doba."</em>
+                Zato svaki projekt promatramo kao priliku da stvorimo nešto autentično i vizualno upečatljivo.
               </p>
               <p>
-                Specijalizirali smo se za dekorativne tehnike poput stucco venetiano, marmorino i mikrocement - 
-                tehnike koje spajaju tradiciju s modernim pristupom dizajnu. Svaki projekat pristupamo s pažnjom 
-                i predanošću, jer razumijemo da vaš prostor nije samo mjesto - to je odsjev vašeg stila i osobnosti.
+                Specijalizirani smo za mikrocement, marmorino, stucco venetiano i suvremene dekorativne tehnike 
+                koje spajaju tradiciju, estetiku i vrhunsku izradu.
+                Naš pristup temelji se na preciznosti, kvalitetnim materijalima i dubokom poštovanju prostora u kojem radimo.
               </p>
               <p>
-                Tim Tactura čine stručnjaci s dugogodišnjim iskustvom, ljudi koji dijele istu strast prema 
-                kvaliteti i savršenstvu. Kontinuirano usvajamo nove tehnike i trendove, ali ne zaboravljamo 
-                vrijednosti tradicionalnog zanata koji čini temelj našeg rada.
+                Vjerujemo da prostor nije samo mjesto — on je odraz osobnosti, stila i načina života.
+                Zato svaki detalj radimo s pažnjom i predanošću.
+              </p>
+              <p>
+                Tactura tim čine majstori s dugogodišnjim iskustvom i zajedničkom strašću prema kvaliteti koja traje.
               </p>
             </div>
           </div>
