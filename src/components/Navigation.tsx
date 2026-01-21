@@ -22,7 +22,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         {/* Logo Section */}
         <div className="flex justify-center py-4 border-b border-border/50">
-          <Link to="/">
+          <Link to="/" className="inline-block bg-background rounded-xl p-3">
             <img 
               src={logo} 
               alt="Tactura - ljepota je različita od doba do doba" 
