@@ -37,7 +37,7 @@ const About = () => {
                 Zato svaki projekt promatramo kao priliku da stvorimo nešto autentično i vizualno upečatljivo.
               </p>
               <p>
-                Specijalizirani smo za mikrocement, marmorino, stucco venetiano i suvremene dekorativne tehnike 
+                Specijalizirani smo za mikrocement i suvremene dekorativne tehnike 
                 koje spajaju tradiciju, estetiku i vrhunsku izradu.
                 Naš pristup temelji se na preciznosti, kvalitetnim materijalima i dubokom poštovanju prostora u kojem radimo.
               </p>
