@@ -49,18 +49,19 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h3 className="text-xl font-bold mb-4">Kontakt</h3>
+            <p className="text-sm opacity-90 mb-3">Tactura j.d.o.o.</p>
             <ul className="space-y-3">
               <li className="flex items-center space-x-2 text-sm opacity-90">
                 <Phone size={16} />
-                <span>+385 XX XXX XXXX</span>
+                <a href="tel:+385951239870" className="hover:opacity-100 transition-opacity">095 123 9870</a>
               </li>
               <li className="flex items-center space-x-2 text-sm opacity-90">
                 <Mail size={16} />
-                <span>info@tactura.hr</span>
+                <a href="mailto:tactura.hr@gmail.com" className="hover:opacity-100 transition-opacity">tactura.hr@gmail.com</a>
               </li>
-              <li className="flex items-center space-x-2 text-sm opacity-90">
-                <MapPin size={16} />
-                <span>Zagreb, Hrvatska</span>
+              <li className="flex items-start space-x-2 text-sm opacity-90">
+                <MapPin size={16} className="mt-0.5 flex-shrink-0" />
+                <span>Ivana Gundulića 78<br />31000 Osijek</span>
               </li>
             </ul>
             <div className="flex space-x-4 mt-6">

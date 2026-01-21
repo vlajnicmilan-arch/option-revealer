@@ -130,7 +130,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Telefon</h3>
-                      <p className="text-muted-foreground">+385 XX XXX XXXX</p>
+                      <a href="tel:+385951239870" className="text-muted-foreground hover:text-primary transition-colors">095 123 9870</a>
                     </div>
                   </div>
 
@@ -140,7 +140,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-muted-foreground">info@tactura.hr</p>
+                      <a href="mailto:tactura.hr@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">tactura.hr@gmail.com</a>
                     </div>
                   </div>
 
@@ -150,7 +150,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Adresa</h3>
-                      <p className="text-muted-foreground">Zagreb, Hrvatska</p>
+                      <p className="text-muted-foreground">Tactura j.d.o.o.</p>
+                      <p className="text-muted-foreground">Ivana Gundulića 78</p>
+                      <p className="text-muted-foreground">31000 Osijek</p>
                     </div>
                   </div>
 
