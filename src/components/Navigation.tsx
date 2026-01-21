@@ -22,11 +22,11 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-6">
           {/* Logo Section - Left */}
-          <Link to="/">
+          <Link to="/" className="ml-2 md:ml-6">
             <img 
               src={logo} 
               alt="Tactura - ljepota je različita od doba do doba" 
-              className="h-[115px] md:h-[154px] w-auto"
+              className="h-[72px] md:h-[80px] w-auto"
             />
           </Link>
 
