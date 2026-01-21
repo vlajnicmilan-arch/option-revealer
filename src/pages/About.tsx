@@ -19,7 +19,7 @@ const About = () => {
         <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">O nama</h1>
           <p className="text-xl md:text-2xl max-w-2xl mx-auto opacity-95">
-            Strast prema ljepoti i savršenstvu
+            Posvećenost detaljima, estetici i dugotrajnoj kvaliteti.
           </p>
         </div>
       </section>
