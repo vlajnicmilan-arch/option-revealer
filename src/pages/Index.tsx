@@ -14,12 +14,14 @@ const Index = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-32">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-32 mb-24">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroHome})` }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/70 to-primary/50" />
+          {/* Bottom fade gradient */}
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-card to-transparent" />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
           <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto opacity-95 animate-fade-in">
