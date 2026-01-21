@@ -67,7 +67,7 @@ const Index = () => {
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
                 <Palette color="#a78c69" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Kreativnost</h3>
+              <h3 className="text-2xl font-bold mb-4">Kreativnost u izvedbi</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Svaki projekat je jedinstvena priča. Kreiramo rešenja prilagođena vašem stilu i potrebama.
               </p>
@@ -77,7 +77,7 @@ const Index = () => {
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
                 <Sparkles color="#a78c69" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Kvalitet</h3>
+              <h3 className="text-2xl font-bold mb-4">Kvaliteta koja traje</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Koristimo samo najbolje materijale i tehnike za rezultate koji traju godinama.
               </p>
@@ -87,7 +87,7 @@ const Index = () => {
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
                 <Users color="#a78c69" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Iskustvo</h3>
+              <h3 className="text-2xl font-bold mb-4">Iskustvo bez kompromisa</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Tim stručnjaka s godinama iskustva u dekorativnim tehnikama i mikrocementu.
               </p>
