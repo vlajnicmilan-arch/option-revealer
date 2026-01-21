@@ -64,30 +64,30 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col items-center text-center pt-[28px] pb-[28px] pl-[24px] pr-[24px] gap-[14px] rounded-lg bg-[#f7f5f2] border border-[#dfdbd6] shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                 <Palette color="#a78c69" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Kreativnost u izvedbi</h3>
+              <h3 className="text-2xl font-bold">Kreativnost u izvedbi</h3>
               <p className="text-[16px] font-light text-[#5c5c5c] leading-relaxed">
                 Svaka površina je jedinstvena. Kreiramo rješenja oblikovana vašim stilom i prostorom.
               </p>
             </div>
 
             <div className="flex flex-col items-center text-center pt-[28px] pb-[28px] pl-[24px] pr-[24px] gap-[14px] rounded-lg bg-[#f7f5f2] border border-[#dfdbd6] shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                 <Sparkles color="#a78c69" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Kvaliteta koja traje</h3>
+              <h3 className="text-2xl font-bold">Kvaliteta koja traje</h3>
               <p className="text-[16px] font-light text-[#5c5c5c] leading-relaxed">
                 Koristimo samo vrhunske materijale i provjerene tehnike za dugotrajne rezultate.
               </p>
             </div>
 
             <div className="flex flex-col items-center text-center pt-[28px] pb-[28px] pl-[24px] pr-[24px] gap-[14px] rounded-lg bg-[#f7f5f2] border border-[#dfdbd6] shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                 <Users color="#a78c69" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Iskustvo bez kompromisa</h3>
+              <h3 className="text-2xl font-bold">Iskustvo bez kompromisa</h3>
               <p className="text-[16px] font-light text-[#5c5c5c] leading-relaxed">
                 Godine stručnog rada u dekorativnim tehnikama i mikrocementu.
               </p>
