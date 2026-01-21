@@ -69,7 +69,7 @@ const Index = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Kreativnost u izvedbi</h3>
               <p className="text-[16px] font-light text-[#5c5c5c] leading-relaxed">
-                Svaki projekat je jedinstvena priča. Kreiramo rešenja prilagođena vašem stilu i potrebama.
+                Svaka površina je jedinstvena. Kreiramo rješenja oblikovana vašim stilom i prostorom.
               </p>
             </div>
 
