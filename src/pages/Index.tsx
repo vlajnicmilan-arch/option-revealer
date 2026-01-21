@@ -79,7 +79,7 @@ const Index = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Kvaliteta koja traje</h3>
               <p className="text-[16px] font-light text-[#5c5c5c] leading-relaxed">
-                Koristimo samo najbolje materijale i tehnike za rezultate koji traju godinama.
+                Koristimo samo vrhunske materijale i provjerene tehnike za dugotrajne rezultate.
               </p>
             </div>
 
