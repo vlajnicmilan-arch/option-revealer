@@ -25,7 +25,7 @@ const Index = () => {
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
           <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto opacity-95 animate-fade-in">
-            <span className="block text-2xl md:text-3xl lg:text-4xl font-bold mb-2">"Prostori koji ostavljaju dojam."</span>
+            <span className="block text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Prostori koji ostavljaju dojam.</span>
             Dekorativne tehnike i mikrocement vrhunske kvalitete.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
