@@ -25,11 +25,11 @@ const About = () => {
       </section>
 
       {/* Story Section */}
-      <section className="py-20">
+      <section className="pt-[100px] pb-[100px]">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-center">Naša priča</h2>
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+          <div className="max-w-[760px] mx-auto">
+            <h2 className="text-[38px] font-semibold text-[#2b2b2b] mb-8 text-center">Naša priča</h2>
+            <div className="space-y-6 text-[18px] font-light leading-[1.55] text-[#595959]">
               <p>
                 <strong className="text-foreground">Tactura</strong> je nastala iz istinske ljubavi prema dekorativnim tehnikama 
                 i želje da prostoru damo karakter, toplinu i trajnu ljepotu.
