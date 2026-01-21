@@ -18,15 +18,15 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-border" style={{ backgroundColor: '#f7f7f7' }}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-6">
           {/* Logo Section - Left */}
           <Link to="/">
             <img 
               src={logo} 
               alt="Tactura - ljepota je različita od doba do doba" 
-              className="h-24 md:h-32 w-auto"
+              className="h-[115px] md:h-[154px] w-auto"
             />
           </Link>
 
