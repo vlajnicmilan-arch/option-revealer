@@ -65,7 +65,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-8 rounded-xl bg-[#f4f2ed] border border-[#e2dfda] hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
-                <Palette className="text-primary" size={32} />
+                <Palette color="#a78c69" size={32} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Kreativnost</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -75,7 +75,7 @@ const Index = () => {
 
             <div className="text-center p-8 rounded-xl bg-[#f4f2ed] border border-[#e2dfda] hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
-                <Sparkles className="text-primary" size={32} />
+                <Sparkles color="#a78c69" size={32} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Kvalitet</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -85,7 +85,7 @@ const Index = () => {
 
             <div className="text-center p-8 rounded-xl bg-[#f4f2ed] border border-[#e2dfda] hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
-                <Users className="text-primary" size={32} />
+                <Users color="#a78c69" size={32} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Iskustvo</h3>
               <p className="text-muted-foreground leading-relaxed">
