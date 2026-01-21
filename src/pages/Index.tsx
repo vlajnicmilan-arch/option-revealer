@@ -7,7 +7,7 @@ import heroHome from "@/assets/hero-home.jpg";
 import serviceDecorative from "@/assets/service-decorative.jpg";
 import serviceMicrocement from "@/assets/service-microcement.jpg";
 import serviceConsultation from "@/assets/service-consultation.jpg";
-import logo from "@/assets/tactura-logo-transparent.png";
+import logo from "@/assets/tactura-logo-new.jpg";
 
 const Index = () => {
   return (
