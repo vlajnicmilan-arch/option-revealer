@@ -25,17 +25,14 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
           {/* Prominent Logo */}
           <div className="mb-8 animate-fade-in">
-            <div className="inline-block bg-card/80 backdrop-blur-sm rounded-2xl p-6 md:p-8">
+            <div className="inline-block bg-card/90 backdrop-blur-sm rounded-2xl p-6 md:p-8">
               <img 
                 src={logo} 
-                alt="Tactura" 
+                alt="Tactura - ljepota je različita od doba do doba" 
                 className="h-48 md:h-72 lg:h-80 w-auto mx-auto"
               />
             </div>
           </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
-            Ljepota je različita<br />od doba do doba
-          </h1>
           <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto opacity-95">
             Transformišemo prostore dekorativnim tehnikama i mikrocementom vrhunskog kvaliteta
           </p>
