@@ -5,6 +5,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { X } from "lucide-react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
+import galleryPod1 from "@/assets/gallery-pod-1.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<{ image: string; title: string } | null>(null);
@@ -22,6 +23,13 @@ const Gallery = () => {
       title: "Luksuzna kupaonica",
       description: "Mikrocement za besavne površine",
       image: gallery2,
+      category: "Mikrocement",
+    },
+    {
+      id: 3,
+      title: "Mikrocement pod u spavaćoj sobi",
+      description: "Elegantna besavna podna površina u neutralnim tonovima",
+      image: galleryPod1,
       category: "Mikrocement",
     },
   ];
