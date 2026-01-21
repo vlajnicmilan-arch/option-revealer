@@ -36,22 +36,28 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-xs font-light tracking-wide uppercase transition-all duration-300 relative pb-1 ${
+                className={`text-sm uppercase transition-all duration-300 ${
                   isActive(item.path)
                     ? "text-foreground"
-                    : "text-foreground/70 hover:text-foreground"
+                    : "text-foreground/80 hover:text-foreground"
                 }`}
                 style={{
-                  borderBottom: isActive(item.path) ? '1.5px solid #a78c69' : '1.5px solid transparent',
+                  fontWeight: 500,
+                  letterSpacing: '-0.2px',
+                  textDecoration: 'none',
+                  textUnderlineOffset: '6px',
+                  textDecorationColor: '#a78c69',
+                  textDecorationThickness: '2px',
+                  ...(isActive(item.path) && {
+                    textDecoration: 'underline',
+                  }),
                 }}
                 onMouseEnter={(e) => {
-                  if (!isActive(item.path)) {
-                    e.currentTarget.style.borderBottom = '1.5px solid #a78c69';
-                  }
+                  e.currentTarget.style.textDecoration = 'underline';
                 }}
                 onMouseLeave={(e) => {
                   if (!isActive(item.path)) {
-                    e.currentTarget.style.borderBottom = '1.5px solid transparent';
+                    e.currentTarget.style.textDecoration = 'none';
                   }
                 }}
               >
