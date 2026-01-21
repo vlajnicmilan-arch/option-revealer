@@ -59,7 +59,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Zašto Tactura?</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Spoj tradicije, izamijeni tekst sa sljedećim: novacije i vrhunskog majstorstva</p>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Spoj estetike, preciznosti i dugotrajnosti.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
