@@ -93,29 +93,6 @@ Deno.serve(async (req: Request): Promise<Response> => {
 
     console.log("Email sent successfully to company:", emailResponse);
 
-    // Send confirmation email to user
-    const confirmationResponse = await sendEmail(
-      [email],
-      "Primili smo vašu poruku - Tactura",
-      `
-        <h2>Hvala vam na poruci, ${firstName}!</h2>
-        <p>Primili smo vašu poruku i javit ćemo vam se u najkraćem mogućem roku.</p>
-        <p><strong>Tema upita:</strong> ${subjectLabel}</p>
-        <h3>Vaša poruka:</h3>
-        <p style="background-color: #f5f5f5; padding: 15px; border-radius: 5px;">${message.replace(/\n/g, '<br>')}</p>
-        <hr />
-        <p>S poštovanjem,<br><strong>Tactura tim</strong></p>
-        <p style="color: #666; font-size: 12px;">
-          Tactura j.d.o.o.<br>
-          Ivana Gundulića 78, 31000 Osijek<br>
-          Tel: 095 123 9870<br>
-          Email: tactura.hr@gmail.com
-        </p>
-      `
-    );
-
-    console.log("Confirmation email sent to user:", confirmationResponse);
-
     return new Response(
       JSON.stringify({ success: true, message: "Email uspješno poslan" }),
       {
